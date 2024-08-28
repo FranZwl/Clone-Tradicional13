@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuhambur{
+    display: none;
+}
+
+.col-12 {
+    padding-top: 30px;
+}
+
+header {
+    margin: 0;
+    height: 41px;
+    background-color: black;
+}
+
+.consulta {
+    display: flex;
+    justify-content: center;
+    padding: 11px;
+    font-size: 15px;
+    color: white;
+}
+
+.imgprinc {
+    display: flex;
+    justify-content: start;
+    margin: 31px 82px;
+    height: 98px;
+}
+.imgsecun{
+    display: none;
+}
+.imgterc{
+    display: none;
+}
+
+.fa-solid {
+    float: right;
+    margin: 34px 57px 0 -30px;
+    color: rgb(154, 154, 154);
+    font-size: 14px;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.buscar {
+    float: right;
+    margin: 87px -155px;
+    width: 20px;
+    border: 0;
+    background-color: white;
+}
+
+.buscar:hover {
+    cursor: pointer;
+}
+
+.quebuscas {
+    float: right;
+    margin: 75px -165px;
+    padding: 0 8px;
+    height: 37px;
+    width: 345px;
+    font-size: 14px;
+    color: rgb(179, 179, 179);
+}
+
+#navbar {
+    margin: 152.5px 0 0 8px;
+    width: 900px;
+    font-size: 14px;
+    padding: 0px 25px;
+}
+
+.linea {
+    margin: -7px 32px;
+    width: 1455px;
+    float: left;
+    color: rgb(179, 179, 179);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.nav {
+    padding: 0;
+}
+
+.nav li a {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: rgb(107, 106, 106);
+    text-decoration: none;
+    padding: 7px 12px;
+    margin: 0px 15px 0px 10px;
+}
+
+
+.nav li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav > li {
+    float: left;
+    position:static;
+}
+
+.nav li ul {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    width: 230px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    height: 0px;
+}
+
+@media only screen and (max-width: 771px){
+    .imgprinc{
+        display: none;
+    }
+    .imgsecun{
+        display: block;
+        max-width: 100%;
+        margin-top: 30px;
+        margin-right: 240px;
+        margin-left: 270px;
+    }
+    .imgterc{
+        display: none;
+    }
+
+    .quebuscas, .buscar{
+        display: none;
+    }
+
+    .fa-solid{
+        display: none;
+    }
+
+    .nav{
+        width: 500px;
+    }
+
+    .menuhambur{
+        display: flex;
+        justify-content: end;
+        float: right;
+        border-right: 1px solid rgb(154, 154, 154);;
+        max-width: 100%;
+        margin-left: 10px;
+        padding: 10px 10px 0px 0.885px;
+    }
+
+    .nav .ver{
+        display: none;
+    }
+
+}
+
+@media only screen and(max-width: 650px){
+    .imgsecun{
+        display: none;
+    }
+    .imgterc{
+        display: none;
+        float: left;
+        margin: 0px;
+    }
+}
+
+.linea2 {
+    margin: 1000px 32px;
+    width: 1455px;
+    float: left;
+    color: rgb(179, 179, 179);
+}
+
+.foot {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    margin-top: 500px;
+    padding: 0;
+    height: 280px;
+}
+
+.foot ul {
+    padding: 0;
+    margin: 0;
+}
+
+.foot li {
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.promos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+}
+
+.service-item img {
+    margin-right: 10px;
+    max-width: 50px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-title {
+    margin: 0;
+}
+
+.service-text {
+    text-align: left;
+}
+
+.centrar {
+    text-align: center;
+}
+
+img.candado {
+    width: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    background: white;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .tarjeta {
+        width: 13rem;
+    }
+    .adoptar {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .service-text {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: left;
+    }
+    .candado {
+        max-width: 100px;
+        height: auto;
+    }
+    .service-title {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+    .p-right {
+        padding-right: 15px;
+    }
+    .p-none-xs {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .tarjeta {
+        width: 22rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+h2 {
+    font-size: 1.6rem;
+    padding-top: .4rem;
+}
+
+h4 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 80%;
+}
+
+.fixed-top {
+    background: white;
+}
+
+.footer-container {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.footer .links {
+    margin: 0 10px;
+}
+
+.footer .links strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.footer .block-subscribe {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .block-subscribe form {
+    display: flex;
+    align-items: center;
+}
+
+.footer .block-subscribe input {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.footer .block-subscribe button {
+    padding: 5px 10px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .links ul li {
+    margin: 0;
+}
+
+.footer .links ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer .links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #000000;
+}
+
+
+
